@@ -1,0 +1,4 @@
+2024-04-26T15:10:14.483-0500 INFO Starting Zendeskfive9IvrNubyxApplication using Java 17.0.6 on joel-ROG-Strix-G513QM-G513QM with PID 38207 (/home/joel/Escritorio/pruebassendesk/zendeskfive9IVR-nubyx/target/classes started by joel in /home/joel/Escritorio/pruebassendesk/zendeskfive9IVR-nubyx)
+2024-04-26T15:10:14.486-0500 DEBUG Running with Spring Boot v2.7.0, Spring v5.3.20
+2024-04-26T15:10:14.487-0500 INFO No active profile set, falling back to 1 default profile: "default"
+2024-04-26T15:10:15.893-0500 INFO Started Zendeskfive9IvrNubyxApplication in 1.617 seconds (JVM running for 2.057)
