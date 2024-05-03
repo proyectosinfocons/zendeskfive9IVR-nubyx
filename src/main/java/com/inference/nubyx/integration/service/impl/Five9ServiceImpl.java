@@ -47,12 +47,13 @@ public class Five9ServiceImpl implements Five9Service {
         String xmlEnvelop = null;
         try {
             xmlEnvelop = xmlMapper.writeValueAsString(envelope);
-            log.info("MI XML{}", xmlEnvelop);
+            log.info(" \n ============= MI XML  =============== \n {} \n ==============  END  ==================", xmlEnvelop);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-        return ResponseEntity.status(HttpStatus.CREATED).body(five9Client.postLeadFive9(envelope).getBody());
+        return ResponseEntity.status(HttpStatus.OK).body(five9Client.postLeadFive9(envelope).getBody());
     }
+
 
     public String addPrefixLab(String numTelephone) {
         if (numTelephone.length() == 9) {
@@ -66,9 +67,9 @@ public class Five9ServiceImpl implements Five9Service {
 
     public String addPrefixProd(String numTelephone) {
         if (numTelephone.length() == 9) {
-            return "51".concat(numTelephone);
+            return "+51".concat(numTelephone);
         } else if (numTelephone.length() == 7) {
-            return "511".concat(numTelephone);
+            return "+511".concat(numTelephone);
         } else {
             return numTelephone;
         }

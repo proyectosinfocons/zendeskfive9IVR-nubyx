@@ -48,7 +48,7 @@ public class Envelope {
                 .build();
 
         var addToListCsv = AddToListCsv.builder()
-                .listName("ListaAPI3")
+                .listName("LISTA_WEB_LEADS_VENTAS")
                 .listUpdateSimpleSettings(listUpdateSetting)
                 .record(record)
                 .build();

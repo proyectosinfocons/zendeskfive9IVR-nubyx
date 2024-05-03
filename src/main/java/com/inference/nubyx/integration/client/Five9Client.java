@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient(name = "five9-lead-client", url = "https://api.five9.com/wsadmin", configuration = Five9CsvClientConfig.class)
 public interface Five9Client {
 
-    @PostMapping(value = "/addToListCsv",
+    @PostMapping(value = "/addRecordToListSimple",
             consumes = MediaType.APPLICATION_XML_VALUE,
             produces = MediaType.APPLICATION_XML_VALUE)
     ResponseEntity<?> postLeadFive9(@RequestBody Envelope envelope);
